@@ -20,6 +20,9 @@ AM_CXXFLAGS =
 
 NO_BUILTIN_CXXFLAGS =
 
+# The appropriate readme file is markdown
+README: README.md
+
 # These are good warnings to turn on by default.  We also tell gcc
 # that malloc, free, realloc, mmap, etc. are not builtins (these flags
 # are supported since gcc 3.1.1).  gcc doesn't think most of them are
@@ -133,7 +136,7 @@ googleinclude_HEADERS =				\
 # Add your documentation files (in doc/) in addition to these
 # top-level boilerplate files.  Also add a TODO file if you have one.
 # We'll add to this later, on a library-by-library basis
-dist_doc_DATA = AUTHORS COPYING ChangeLog INSTALL NEWS README README_windows.txt \
+dist_doc_DATA = AUTHORS COPYING ChangeLog INSTALL NEWS README.md README_windows.txt \
                 TODO ChangeLog.old
 
 # The libraries (.so's) you want to install
